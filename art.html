@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalaakari</title>
+    <link rel="stylesheet" href="Bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="Bootstrap/js/bootstrap.min.js">
+    <link rel="stylesheet" href="dstyle.css">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="astyle.css">
+    <style>
+      *{
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+      }
+    body
+      {
+        background: linear-gradient(to right,#fdfdfd, #ff00f7, #a33185, #ff8800);
+	        animation: gradient 10s infinite;
+          background-size: 400% 400%;
+          align-content: center;
+          justify-content: center;
+      }
+    nav 
+      {
+        background: linear-gradient(to right, #3935af, #cd40aa, #0b003b, #240070);
+	        background-size: 400% 400%;
+	        animation: gradient 10s ease-in-out infinite;
+          border-radius: 50px;
+      }
+      @keyframes gradient {
+	      0% {
+		          background-position: 0% 50%;
+	          }
+	      50% {
+		          background-position: 100% 50%;
+	          }
+	      100% {
+		          background-position: 0% 50%;
+            }
+    }
+    a 
+    {
+      text-decoration: none;
+      color: white;
+      font-weight: 500;
+      
+    }
+    a:hover
+    {
+      color: linear-gradient(to right,white,red,white);
+    }
+    .navbar-expand-lg .navbar-nav .nav-link
+    {
+      padding-left: 50px;
+      padding-right: 50px;
+      position: relative;
+      font-size: 34px;
+      color: white;
+    }
+    .navbar-expand-lg .navbar-nav .nav-link:hover
+    {
+      border: 2px solid white;
+      border-radius: 20px;
+      color: rgb(247, 191, 79);
+      transform: scale(1.2);
+      transition-duration: 0.4s;
+    }
+    .navbar-expand-lg .navbar-nav .nav-link.active
+    {
+      color: orange;
+    }
+    </style>
+</head>
+<body>
+    <header class="header">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#"><img src="icons/logo.jpg" width="75px" class="rounded-pill"></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span></span><span></span><span></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-between" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="Dashboard.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="music.html">Music</a>
+        </li>
+        <li class="nav-item" >
+          <a class="nav-link active" href="art.html">Art-Work</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Live.html">Live</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Friends?</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="theme">Theme</a>
+        </li>
+      </ul>
+      <ul class="navbar-nav ml-auto">
+        <button class="btn"><img src="icons/profile.jpg" width="57px" style="border-radius:50%; color: #fdfdfd;"> Profile</button>
+      </ul>
+    </div>
+  </div>
+</nav>  
+    </header>
+    <ul class="main-nav">
+      <li class="item1">
+        <div class="bg"></div>
+      </li>
+      <li class="item2">
+        <div class="bg">
+          <video id="background-video" autoplay loop muted >
+          <source src="icons/vid1.mp4" type="video/mp4">
+          </video></div>
+      </li>
+      <li class="item3">
+        <div class="bg"></div>
+      </li>
+      <li class="item4">
+        <div class="bg"></div>
+      </li>
+      <li class="item5">
+        <div class="bg"></div>
+      </li>
+    </ul>
+    <script>
+      const themeBtn = document.getElementById('theme');
+    const bodyStyle = document.body.style;
+    const textSpan = document.getElementsByClassName('text');
+    let currentTheme = 'light';
+
+    themeBtn.onclick = () => {
+      if(currentTheme = 'light'){
+        bodyStyle.background = 'linear-gradient(to right, #000000, #270426, #37052a, #170218)';
+        bodyStyle.backgroundSize = '400% 400%';
+        for (let text of textSpan){
+          text.style.color = 'white';
+        }
+        currentTheme = 'dark';
+      }
+      else if(currentTheme = 'dark'){
+        bodyStyle.background = 'linear-gradient(to right, #fdfdfd, #ff00f7, #a33185, #ff8800)';
+        bodyStyle.backgroundSize = '400% 400%';
+        for (let text of textSpan){
+          text.style.color = 'black';
+        }
+        currentTheme = 'light'
+      }
+    }
+    </script>
+</body>
+</html>

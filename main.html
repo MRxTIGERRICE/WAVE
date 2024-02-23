@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+<meta charset="UTF-8">
+<title>Main-Page</title>
+<style>
+html {
+  font: 5vmin/1.3 Serif;
+  overflow: hidden;
+  background: #123;
+}
+
+body, head {
+  display: flex;
+  font-size: 52px;
+  color: transparent;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+head::before, head::after,
+body::before, body::after {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 3em;
+  height: 3em;
+  content: "-";
+  mix-blend-mode: screen;
+  animation: 44s -27s move infinite ease-in-out alternate;
+}
+
+body::before {
+  text-shadow: 1.9808401279em 2.2127401629em 2px rgba(0, 255, 145, 0.9), 0.7573387199em 0.5477196123em 2px rgba(255, 78, 0, 0.9), 2.2191119289em 0.4290285176em 2px rgba(255, 207, 0, 0.9), 1.6722201696em 1.1711628737em 2px rgba(232, 255, 0, 0.9), 0.6676928155em 1.4505005786em 2px rgba(165, 255, 0, 0.9), 1.6613212189em 0.6214926961em 2px rgba(255, 68, 0, 0.9), 2.2308688431em 0.2198594349em 2px rgba(255, 52, 0, 0.9), 0.7851047559em 1.4321195211em 2px rgba(0, 0, 255, 0.9), 1.3573712931em -0.230091045em 2px rgba(255, 89, 0, 0.9), 0.7424151133em 1.5561219913em 2px rgba(44, 255, 0, 0.9), 1.2456483111em 0.2471997387em 2px rgba(0, 225, 255, 0.9), 2.2550089287em 1.7218771537em 2px rgba(1, 255, 0, 0.9), 1.7863865509em 0.1254956619em 2px rgba(0, 162, 255, 0.9), 1.1122676853em -0.2140711121em 2px rgba(0, 175, 255, 0.9), 1.4121661943em -0.1908982264em 2px rgba(255, 189, 0, 0.9), 1.9061760128em 1.9247152005em 2px rgba(0, 255, 18, 0.9), 1.1234606898em 1.0998358796em 2px rgba(89, 0, 255, 0.9), 1.3860108508em 1.04382322em 2px rgba(0, 255, 122, 0.9), 0.8151538143em 0.9423101138em 2px rgba(0, 117, 255, 0.9), 1.9834881722em -0.4254291319em 2px rgba(167, 0, 255, 0.9), -0.3528730399em 1.2455173866em 2px rgba(255, 0, 168, 0.9), 0.8951731923em 0.1773960624em 2px rgba(255, 0, 171, 0.9), 0.4720935341em 1.8670642867em 2px rgba(255, 0, 31, 0.9), -0.3831807746em 0.457323077em 2px rgba(255, 18, 0, 0.9), 0.2369302851em 1.8035039797em 2px rgba(255, 243, 0, 0.9), 2.2047367246em 0.8803594349em 2px rgba(205, 255, 0, 0.9), 0.9922420591em 0.1855227214em 2px rgba(255, 54, 0, 0.9), 2.1467848384em 1.5723896066em 2px rgba(255, 0, 101, 0.9), 1.984036522em 2.1793293401em 2px rgba(255, 19, 0, 0.9), -0.0739826804em 1.5369609148em 2px rgba(255, 181, 0, 0.9), 0.2836102042em 1.82300172em 2px rgba(0, 255, 79, 0.9), 1.2054658679em 0.7534926897em 2px rgba(0, 181, 255, 0.9), 2.0018062125em 1.3017119476em 2px rgba(255, 0, 131, 0.9), 0.1092552845em 0.3548470378em 2px rgba(255, 0, 101, 0.9), 1.6773318473em -0.2452630056em 2px rgba(0, 169, 255, 0.9), 0.3023548865em -0.172525232em 2px rgba(255, 0, 228, 0.9), 1.6551429488em 0.6775133754em 2px rgba(0, 255, 46, 0.9), 2.4310267318em 2.2327741285em 2px rgba(0, 47, 255, 0.9), 1.6909774334em -0.2293203857em 2px rgba(199, 255, 0, 0.9), 0.6710807993em 0.3263514285em 2px rgba(60, 255, 0, 0.9), 0.6278826336em 1.4776182823em 2px rgba(0, 61, 255, 0.9);
+  animation-duration: 44s;
+  animation-delay: -27s;
+}
+
+body::after {
+  text-shadow: 1.5244500679em 0.5366199499em 2px rgba(32, 0, 255, 0.9), 0.5431184823em -0.3230646934em 2px rgba(255, 108, 0, 0.9), 1.5926904746em 0.4048964721em 2px rgba(0, 40, 255, 0.9), 1.9305498395em 1.1224767928em 2px rgba(2, 0, 255, 0.9), -0.1612480035em 1.0991245188em 2px rgba(7, 255, 0, 0.9), -0.4334490831em -0.0523892161em 2px rgba(62, 255, 0, 0.9), 0.8149962829em 2.4816357261em 2px rgba(78, 0, 255, 0.9), 0.069590142em -0.3732078477em 2px rgba(0, 255, 87, 0.9), 0.6445543887em 1.7624192585em 2px rgba(23, 0, 255, 0.9), 1.8227767931em 0.0772858923em 2px rgba(0, 255, 239, 0.9), 1.9652825421em -0.4421985132em 2px rgba(191, 255, 0, 0.9), 1.4667918398em 0.4396617746em 2px rgba(0, 255, 139, 0.9), 2.1584660538em -0.0107744971em 2px rgba(0, 255, 217, 0.9), 0.1234567386em 2.3232398282em 2px rgba(255, 0, 249, 0.9), -0.0572384549em 0.9965709023em 2px rgba(26, 0, 255, 0.9), 1.3700115594em 1.2446312818em 2px rgba(0, 67, 255, 0.9), 1.9563011606em 1.8367077841em 2px rgba(255, 156, 0, 0.9), 2.1123149445em 0.7073554899em 2px rgba(0, 147, 255, 0.9), -0.29291669em 1.5512051052em 2px rgba(0, 163, 255, 0.9), 1.6804744968em 1.5999749393em 2px rgba(0, 255, 234, 0.9), -0.4450079943em 1.1875153447em 2px rgba(255, 79, 0, 0.9), 1.7849471715em 0.4396020024em 2px rgba(0, 255, 115, 0.9), 0.9603080509em 0.6599010699em 2px rgba(0, 255, 225, 0.9), -0.4354466979em 1.9760450145em 2px rgba(140, 0, 255, 0.9), 1.8048160678em 0.931949738em 2px rgba(163, 255, 0, 0.9), -0.1138980194em 0.3091875408em 2px rgba(255, 0, 147, 0.9), 0.4092330709em 2.1927652274em 2px rgba(0, 255, 177, 0.9), 2.265748196em 1.8058791228em 2px rgba(0, 255, 229, 0.9), 0.9435798291em 2.3189501542em 2px rgba(200, 0, 255, 0.9), 1.4476923719em 0.4618709872em 2px rgba(222, 255, 0, 0.9), 1.6095737826em 0.5148015581em 2px rgba(37, 0, 255, 0.9), 2.3269381848em 0.8572689994em 2px rgba(0, 130, 255, 0.9), 1.6890896679em 2.2678643792em 2px rgba(255, 208, 0, 0.9), 2.3255227505em 2.2052360322em 2px rgba(255, 138, 0, 0.9), 1.891940084em -0.0517810622em 2px rgba(255, 240, 0, 0.9), 0.9140089025em 1.0329864579em 2px rgba(0, 255, 248, 0.9), -0.3832016132em -0.0816435824em 2px rgba(0, 255, 189, 0.9), 0.9600033181em 2.3065243611em 2px rgba(0, 255, 68, 0.9), 2.1190828021em 0.4055076649em 2px rgba(216, 255, 0, 0.9), 2.1307054554em -0.3691415119em 2px rgba(255, 0, 25, 0.9), -0.1034447608em 2.2298594228em 2px rgba(168, 0, 255, 0.9);
+  animation-duration: 43s;
+  animation-delay: -32s;
+}
+
+head::before {
+  text-shadow: 0.2586186914em 0.4240893501em 2px rgba(255, 0, 250, 0.9), 2.2235112571em 0.410430951em 2px rgba(0, 173, 255, 0.9), 0.9071167894em 2.3902990861em 2px rgba(255, 204, 0, 0.9), 2.161202747em 1.2354029413em 2px rgba(0, 3, 255, 0.9), -0.2787501416em 2.0521424141em 2px rgba(0, 255, 38, 0.9), 1.0017498766em 0.2965630036em 2px rgba(0, 30, 255, 0.9), 0.9376706885em 1.0312231896em 2px rgba(255, 0, 136, 0.9), 2.0302528392em 1.4084949289em 2px rgba(255, 0, 229, 0.9), 1.6567023147em 1.2761026484em 2px rgba(0, 255, 131, 0.9), 0.5444606472em 1.1633489429em 2px rgba(0, 255, 74, 0.9), -0.4648301835em 1.2544618719em 2px rgba(172, 0, 255, 0.9), 1.4673130362em 2.2411416304em 2px rgba(255, 0, 31, 0.9), 2.2297778071em 2.0955178057em 2px rgba(151, 255, 0, 0.9), 0.5620609761em 1.8891414443em 2px rgba(177, 255, 0, 0.9), 1.6935725015em 0.1878413125em 2px rgba(0, 168, 255, 0.9), 1.2336623032em 0.0125033429em 2px rgba(248, 255, 0, 0.9), 1.1386607453em -0.3285547439em 2px rgba(0, 255, 137, 0.9), 2.3198419468em 0.62890708em 2px rgba(0, 255, 219, 0.9), 1.1369655981em 0.4253673805em 2px rgba(255, 0, 62, 0.9), 0.574480371em 2.129103174em 2px rgba(0, 255, 44, 0.9), 0.9589760612em 2.0984075032em 2px rgba(6, 0, 255, 0.9), 1.7803042078em 2.0111805486em 2px rgba(183, 255, 0, 0.9), 0.0822624507em 1.4778429341em 2px rgba(255, 27, 0, 0.9), 0.0537948055em 0.6730713767em 2px rgba(255, 0, 224, 0.9), -0.4345599172em 1.4053395355em 2px rgba(255, 133, 0, 0.9), 1.7623851751em -0.0145801295em 2px rgba(255, 0, 13, 0.9), 1.4108108763em 0.2753122258em 2px rgba(255, 0, 16, 0.9), 0.8582963225em 1.2934969995em 2px rgba(0, 255, 134, 0.9), 0.8076994233em 1.9443309896em 2px rgba(255, 126, 0, 0.9), 0.8000240335em 1.1561692822em 2px rgba(128, 255, 0, 0.9), 1.6720224786em 1.7928457032em 2px rgba(213, 0, 255, 0.9), 0.9271932081em 1.658822797em 2px rgba(0, 255, 136, 0.9), 1.9208624736em 0.7058763864em 2px rgba(255, 0, 120, 0.9), -0.0134044971em 1.2649569506em 2px rgba(239, 0, 255, 0.9), 1.1230092547em 2.0979048686em 2px rgba(26, 255, 0, 0.9), 1.0172748758em 0.7563809388em 2px rgba(253, 255, 0, 0.9), 0.978454083em -0.405088295em 2px rgba(49, 0, 255, 0.9), 2.4091883636em 1.8641542837em 2px rgba(0, 255, 226, 0.9), 0.7024628505em -0.2239076951em 2px rgba(255, 0, 98, 0.9), 1.5963295553em -0.2415951629em 2px rgba(20, 0, 255, 0.9), 1.1195919024em 0.6475807212em 2px rgba(0, 217, 255, 0.9);
+  animation-duration: 42s;
+  animation-delay: -23s;
+}
+
+head::after {
+  text-shadow: 0.4117241634em 1.4381879544em 2px rgba(0, 70, 255, 0.9), 0.143616099em 1.8702142419em 2px rgba(255, 0, 57, 0.9), 2.312089739em 1.0652816092em 2px rgba(255, 222, 0, 0.9), 0.4697429945em 1.5905572551em 2px rgba(255, 0, 84, 0.9), 2.2892826837em 1.8083626707em 2px rgba(0, 18, 255, 0.9), 0.5058299144em 1.0755944009em 2px rgba(255, 114, 0, 0.9), 2.392211815em -0.437998458em 2px rgba(0, 182, 255, 0.9), 0.5863271361em 0.7406374418em 2px rgba(127, 0, 255, 0.9), 2.2197628889em 2.265278006em 2px rgba(0, 67, 255, 0.9), 1.7521245615em 1.4119719219em 2px rgba(0, 255, 144, 0.9), 1.6144338169em 1.7907088172em 2px rgba(1, 255, 0, 0.9), 1.8571039579em 1.0074884101em 2px rgba(0, 255, 119, 0.9), 1.9735446794em 0.9743601492em 2px rgba(0, 187, 255, 0.9), 1.2787463832em -0.3566730981em 2px rgba(255, 172, 0, 0.9), -0.0286435288em 0.7049252943em 2px rgba(255, 207, 0, 0.9), 0.5063301569em 0.9350315516em 2px rgba(255, 0, 114, 0.9), 0.2280830115em -0.0706459419em 2px rgba(125, 0, 255, 0.9), 2.4046200844em 1.0968416036em 2px rgba(255, 0, 227, 0.9), 1.9125338638em -0.3858540825em 2px rgba(255, 8, 0, 0.9), 2.1518535315em 1.0928367592em 2px rgba(255, 25, 0, 0.9), 1.342953367em 1.6635131118em 2px rgba(255, 0, 108, 0.9), 2.3890572639em 0.3390684264em 2px rgba(60, 0, 255, 0.9), 1.412852876em 0.9163946277em 2px rgba(0, 43, 255, 0.9), 1.0369441553em 1.9567060261em 2px rgba(114, 255, 0, 0.9), 1.5255964687em 0.638257466em 2px rgba(78, 255, 0, 0.9), 0.9678726181em 0.9056728821em 2px rgba(161, 255, 0, 0.9), 0.3099248528em 1.625495743em 2px rgba(185, 255, 0, 0.9), 0.3781580167em 1.0144249167em 2px rgba(0, 255, 37, 0.9), 1.7611129657em 0.3444533919em 2px rgba(209, 255, 0, 0.9), 1.5497701753em -0.0889147228em 2px rgba(255, 0, 119, 0.9), -0.3980418039em -0.0359836475em 2px rgba(74, 0, 255, 0.9), -0.481551206em 1.2744536873em 2px rgba(0, 255, 182, 0.9), 1.0394060871em 1.1377502018em 2px rgba(255, 0, 104, 0.9), 2.407195788em 2.076441575em 2px rgba(0, 255, 83, 0.9), 1.2453413625em 0.5665380986em 2px rgba(255, 238, 0, 0.9), 0.3307034588em 0.5562049977em 2px rgba(255, 39, 0, 0.9), 1.9622244439em 0.9673663359em 2px rgba(255, 0, 150, 0.9), 1.3436725231em 0.9128843591em 2px rgba(0, 255, 46, 0.9), 1.01897203em 0.6968316063em 2px rgba(0, 255, 84, 0.9), 1.3621939212em 0.6084416998em 2px rgba(0, 134, 255, 0.9), 1.5199563743em 0.208215839em 2px rgba(180, 0, 255, 0.9);
+  animation-duration: 41s;
+  animation-delay: -19s;
+}
+
+@keyframes move {
+  from {
+    transform: rotate(0deg) scale(12) translateX(-20px);
+  }
+  to {
+    transform: rotate(360deg) scale(18) translateX(20px);
+  }
+}
+</style>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    position: relative;
+    display: flex;
+    /* z-index: -1; */
+    align-items: center;
+    text-align: center;
+    font-family: sans-serif;
+    justify-content: center;
+    background-size: cover;
+    background-position: center;
+}
+.container{
+  position: relative;
+  width: 450px;
+  height: 450px;
+  background:rgba(255,255,255, 0.55);
+  border-radius: 50%;
+  align-content: center;
+  justify-content: center;
+  align-self: center;
+}
+a 
+{
+position: relative;
+z-index: 111;
+}
+img
+{
+  position: relative;
+  align-content: center;
+  justify-content: center;
+  align-self: center;
+  border-radius: 50%;
+  width: 450px;
+  height: 450px;
+  animation: breathing 1000ms ease-out infinite normal;
+  z-index: -3;
+}
+img .hover
+{
+  transform: scale(1.5);
+}
+@keyframes breathing {
+  0% {
+    -webkit-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+
+  25% {
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+  }
+
+  60% {
+    -webkit-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+
+  100% {
+    -webkit-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+}
+</style>
+  <script>
+  if (document.location.search.match(/type=embed/gi)) {
+    window.parent.postMessage("resize", "*");
+  }
+</script>
+</head>
+<body>
+  <script src="https://cpwebassets.codepen.io/assets/editor/iframe/iframeRefreshCSS-5e03f34e38152f20eb79c96b0b89c2d99c5085e9ae9386dc71e2f0b3c30bf513.js"></script>
+  <div class="container">
+  <a href="Dashboard.html">
+    <img src="icons/logo.jpg" >
+  </a>
+  </div>
+</body>
+</html>
+ 

@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DashBoard</title>
+    <link rel="stylesheet" href="Bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="Bootstrap/js/bootstrap.min.js">
+    <link rel="stylesheet" href="dstyle.css">
+    <link rel="stylesheet" href="quote.js">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <style>
+      *{
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+      }
+    body
+      {
+        background: linear-gradient(to right,#fdfdfd, #ff00f7, #a33185, #ff8800);
+        animation: gradient 10s infinite;
+          background-size: 400% 400%;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  /* display: flex; */
+      }
+    nav 
+      {
+          background: linear-gradient(to right, #3935af, #cd40aa, #0b003b, #240070);
+	        background-size: 400% 400%;
+	        animation: gradient 10s ease-in-out infinite;
+          border-radius: 50px;
+      }
+      @keyframes gradient {
+	      0% {
+		          background-position: 0% 50%;
+	          }
+	      50% {
+		          background-position: 100% 50%;
+	          }
+	      100% {
+		          background-position: 0% 50%;
+            }
+    }
+    a 
+    {
+      text-decoration: none;
+      color: white;
+      font-weight: 500;
+      
+    }
+    a:hover
+    {
+      color: linear-gradient(to right,white,red,white);
+    }
+    .navbar-expand-lg .navbar-nav .nav-link
+    {
+      padding-left: 50px;
+      padding-right: 50px;
+      position: relative;
+      font-size: 34px;
+      color: white;
+    }
+    .navbar-expand-lg .navbar-nav .nav-link:hover
+    {
+      border: 2px solid white;
+      border-radius: 20px;
+      color: rgb(247, 191, 79);
+      transform: scale(1.2);
+      transition-duration: 0.4s;
+    }
+    .navbar-expand-lg .navbar-nav .nav-link.active
+    {
+      color: orange;
+    }
+    .container
+    {
+      background-color: rgb(70, 0, 121);
+      width:flex;
+      height: 300px;
+      transform: translateY(47.4vh);
+      /* top: 400px; */
+      color: white;
+      border-top-left-radius:50% ;
+      border-top-right-radius:50% ;
+      position: relative;
+      /* z-index: 112; */
+    }
+    .circle
+    {
+      width: 130px;
+      height: 130px;
+      background-color: #0b003b;
+      border-radius: 50%;
+      transform: translateY(23.4vh) translateX(10vh);
+      align-content: center;
+      justify-content: center;
+    }
+    .circle .inner{
+      width: 100px;
+      height: 100px;
+      background-color: #cd40aa;
+      border-radius: 50%;
+      transform: translateX(25px) translateY(10px);
+    }
+    .circle1
+    {
+      width: 130px;
+      height: 130px;
+      background-color: #0b003b;
+      border-radius: 50%;
+      transform: translateX(1328px) translateY(5vh);
+      align-content: center;
+      justify-content: center;
+    }
+    .circle1 .inner1{
+      width: 100px;
+      height: 100px;
+      background-color: #cd40aa;
+      border-radius: 50%;
+      transform: translateX(4px) translateY(10px);
+    }
+    .eye
+    {
+      width: 130px;
+      height: 130px;
+      background-color: #ffffff;
+      border-radius: 50%;
+      transform: translateY(-15vh) translateX(65vh);
+      align-content: center;
+      justify-content: center;
+      /* z-index: 113; */
+    }
+    .eye .inner{
+      width: 100px;
+      height: 100px;
+      background-color: #010001;
+      border-radius: 50%;
+      transform: translateX(20px) translateY(10px);
+      animation: look 2s ease-in-out infinite;
+    }
+    .eye1
+    {
+      width: 130px;
+      height: 130px;
+      background-color: #ffffff;
+      border-radius: 50%;
+      transform: translateX(980px) translateY(-34vh);
+      align-content: center;
+      justify-content: center;
+    }
+    .eye1 .inner1{
+      width: 100px;
+      height: 100px;
+      background-color: #000000;
+      border-radius: 50%;
+      transform: translateX(4px) translateY(10px);
+      animation: look 2s ease-in-out infinite;
+    }
+    @keyframes look{
+      0%{
+        transform: translateX(30px);
+      }
+      50%{
+        transform: translateX(0px);
+      }
+      70%{
+        /* transform: translateX(-30px); */
+      }
+      100%{
+        transform: translateX(30px);
+      }
+    }
+    </style>
+</head>
+<body>
+    <header class="header">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#"><img src="icons/logo.jpg" width="75px" class="rounded-pill"></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span></span><span></span><span></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-between" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="Dashboard.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="music.html">Music</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="art.html">Art-Work</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Live.html">Live</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Friends?</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="theme">Theme</a>
+        </li>
+      </ul>
+      <ul class="navbar-nav ml-auto">
+        <button class="btn"><img src="icons/profile.jpg" width="57px" style="border-radius:50%; color: #fdfdfd;"> Profile</button>
+        <!-- <li> <a href="logout.php">Logout</a></li> -->
+      </ul>
+    </div>
+  </div>
+</nav>  
+    </header>
+    <div class="container">
+    </div>
+    <div class="circle">
+      <div class="inner">
+      </div>
+    </div>
+    <div class="circle1">
+      <div class="inner1">
+      </div>
+    </div>
+    <div class="eye">
+      <div class="inner"></div>
+    </div>
+    <div class="eye1">
+      <div class="inner1"></div>
+    </div>
+    <div class="box">
+  
+      <!-- Quote Box -->
+      <div class="block text-center">
+    
+        <!-- Front part of the Quote Box -->
+      <div class = "quote-box block__main block__front">
+    
+        <!-- Quote to be Displayed Here -->
+        <span class = "quote">
+            
+          <!-- Hyphen is Displayed  -->
+          <i class="fas fa-2x fa-quote-left"></i>
+    
+          <!-- Quote Text -->
+          <span class = "text">
+          Quote To be Displayed Here
+          </span>
+        </span>
+          
+        <!-- Author to be Displayed Here -->
+        <div class = "author">
+          Author to be Displayed Here
+        </div>
+        <a  class = "new-quote btn btn-default" 
+            onclick="newQuote()">New Quote</a>
+      </div>
+      <!-- Back Part of the Quote Box -->
+      <div class = "quote-box block__main block__back">
+    
+        <!-- Quote to be Displayed Here -->
+        <span class = "quote">
+            
+          <!-- Hyphen is Displayed  -->
+          <i class="fas fa-2x fa-quote-left"></i>
+    
+          <!-- Quote Text -->
+          <span class = "text">
+          Quote To be Displayed Here
+          </span>
+    
+        </span>
+          
+        <!-- Author to be Displayed Here -->
+        <div class = "author">
+          Author to be Displayed Here
+        </div>
+          <!-- Button -->
+          <a  class = "new-quote btn btn-default " 
+              onclick="newQuote()">New Quote</a>
+      </div>
+    </div>
+  </div>
+  <script src="js/script.js"></script>
+  <script>
+    const themeBtn = document.getElementById('theme');
+    const bodyStyle = document.body.style;
+    const textSpan = document.getElementsByClassName('text');
+    let currentTheme = 'light';
+
+    themeBtn.onclick = () => {
+      if(currentTheme = 'light'){
+        bodyStyle.background = 'linear-gradient(to right, #000000, #270426, #37052a, #170218)';
+        bodyStyle.backgroundSize = '400% 400%';
+        for (let text of textSpan){
+          text.style.color = 'white';
+        }
+        currentTheme = 'dark';
+      }
+      else if(currentTheme = 'dark'){
+        bodyStyle.background = 'linear-gradient(to right, #fdfdfd, #ff00f7, #a33185, #ff8800)';
+        bodyStyle.backgroundSize = '400% 400%';
+        for (let text of textSpan){
+          text.style.color = 'black';
+        }
+        currentTheme = 'light'
+      }
+    }
+  </script>
+</body>
+</html>
