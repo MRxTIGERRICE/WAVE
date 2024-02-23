@@ -6,6 +6,7 @@ A Web-Application that integrates basic HTML,CSS with a gallery, Audio Visualize
 - HTML
 - CSS
 - JAVA SCRIPT
+- PHP
 ## Frameworks used
 - Bootstrap
 - CV2
